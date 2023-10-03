@@ -12,5 +12,9 @@ public class Principal {
         bibliotecaKonradLorenz.registrarLibro(Hobbit);
         Libro laodisea= new Libro("La Odisea", "Homero", 448);
         bibliotecaKonradLorenz.registrarLibro(laodisea);
+        /**
+         * Complejidad temporal O(1) Tiempo Constante
+         */
+
     }
 }
