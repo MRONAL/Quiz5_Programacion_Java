@@ -8,10 +8,10 @@ public class Biblioteca {
     }
 
     /**
-     *
-     * @param titulo
-     * @return
-     * Complejidad temporal O(N) Timepo Lineal
+     * Busca un libro por título en la lista de libros disponibles.
+     * @param titulo Título del libro a buscar.
+     * @return El libro encontrado o null si no se encuentra.
+     * Complejidad temporal O(N) Tiempo Lineal.
      */
     public Libro buscarLibro(String titulo) {
         for (int i = 0; i < librosDisponibles.size(); i++) {
@@ -21,8 +21,12 @@ public class Biblioteca {
             }
         }
         return null;
-
     }
+
+    /**
+     * Devuelve la lista completa de libros disponibles.
+     * @return Lista de libros disponibles.
+     */
     public LinkedList<Libro> mostrarLibrosDisponibles(){
         return librosDisponibles;
     }
